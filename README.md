@@ -13,6 +13,8 @@ Optional - run __generate_data__ to generate a bigger file (with millions of rec
 
 # screenshot
 
+![alt text][screenshot]
+
 [screenshot]: https://github.com/brunogoncalooliveira/elasticsearch-python-demo/blob/master/screenshot.jpg
 
 

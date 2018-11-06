@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="mainwindow">
+    <property name="height">200</property>
+    <property name="padx">20</property>
+    <property name="pady">20</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="columnspan">3</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <property name="sticky">w</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="Label_1">
+        <property name="compound">top</property>
+        <property name="cursor">arrow</property>
+        <property name="text" translatable="yes">Introduza um nome</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="txtnome">
+        <property name="textvariable">string:nome</property>
+        <property name="validate">key</property>
+        <property name="validatecommand">on_name_change</property>
+        <property name="validatecommand_args">%P</property>
+        <property name="width">47</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">3</property>
+          <property name="ipady">0</property>
+          <property name="pady">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">nw</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="texto">
+        <property name="height">10</property>
+        <property name="pady">0</property>
+        <property name="width">64</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="ipadx">20</property>
+          <property name="ipady">20</property>
+          <property name="pady">20</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="t">
+        <property name="justify">center</property>
+        <property name="textvariable">string:lbltempo</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="searchtype">
+        <property name="state">normal</property>
+        <property name="textvariable">string:searchtype</property>
+        <property name="values">"Search as you type" "Multiple terms"</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">e</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

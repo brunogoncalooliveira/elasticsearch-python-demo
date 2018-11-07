@@ -1,0 +1,2 @@
+elasticsearch==6.3.1
+pygubu==0.9.8.2
